@@ -1,0 +1,46 @@
+.wines-element {
+  color: #333333 !important;
+  font-size: 18px;
+}
+
+.wines-element:hover {
+  background-color: #074576;
+  color: #fff !important;
+}
+
+.left-line {
+  border-left: 1px solid #074576;
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+.wines-format-hidden {
+  visibility: collapse;
+  height: 0px;
+  padding: 0px;
+}
+
+.list-wines {
+  background-color: #fff;
+  margin: 10px;
+}
+
+.list-wines:hover {
+  background-color: #074576;
+  color: #fff !important;
+  margin: 10px;
+}
+
+a.wine-name:hover {
+  background-color: #005C90;
+  ;
+}
+
+a.active {
+  background-color: #074576;
+  color: #fff;
+  border-color: #074576;
+  text-align: center;
+}

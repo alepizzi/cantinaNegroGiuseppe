@@ -1,0 +1,46 @@
+.resize-image-wine {
+  max-height: 400px;
+  max-width: 325px;
+}
+
+.margin-btn {
+  margin-bottom: 10px;
+}
+
+.center-dropdown {
+  margin-left: -80px;
+}
+
+a.list-group-item {
+  background-color: #fff;
+  color: #074576;
+  border-color: #074576;
+  text-align: center;
+}
+
+a.list-group-item:hover {
+  background-color: rgb(97, 123, 141);
+  color: #fff;
+  border-color: #074576;
+  text-align: center;
+}
+
+a.wine-name:hover {
+  background-color: rgb(132, 153, 168);
+  ;
+}
+
+a.active {
+  background-color: #074576;
+  color: #fff;
+  border-color: #074576;
+  text-align: center;
+}
+
+a.gran-format {
+  border: 1px solid #074576;
+  background-color: #fff !important;
+  color: #4D4D4D !important;
+  margin-top: 10px;
+  text-align: center;
+}

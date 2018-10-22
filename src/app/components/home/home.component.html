@@ -1,0 +1,70 @@
+<carousel>
+  <slide>
+    <img src="assets/images/Carousel/imagecompressor/Portone.JPG" alt="portone cantina negro" style="display: block; width: 100%;">
+  </slide>
+  <slide>
+    <img src="assets/images/Carousel/imagecompressor/Neve.jpg" alt="paesaggio innevato" style="display: block; width: 100%;">
+  </slide>
+  <slide>
+    <img src="assets/images/Carousel/imagecompressor/SalaDegustazione2.jpg" alt="sala degustazione" style="display: block; width: 100%;">
+  </slide>
+  <slide>
+    <img src="assets/images/Carousel/imagecompressor/VigneAutunno.jpg" alt="vigne langhe in autunno" style="display: block; width: 100%;">
+  </slide>
+</carousel>
+
+
+<div @fade class="container-fluid">
+  <div class="row">
+    <div class="hidden-xs col-sm-3 text-center no-padding">
+      <div class="text-center">
+        <h1>{{ 'Wine.Title' | translate }}</h1>
+      </div>
+      <ul class="nav nav-pills nav-stacked">
+        <li *ngFor="let wine of winesList" class="list-wines" (mouseleave)="showFormat($event.currentTarget.id)"
+          (mouseenter)="showFormat($event.currentTarget.id)" id="ID_{{wine.name}}" role="navigation">
+          <a routerLink="{{wine.link}}" class="wines-element">
+            {{wine.name}}
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-9 left-line">
+      <div class="row">
+        <div class="col col-sm-12 text-center">
+          <h1> {{ 'Home.Winery.Title' | translate }}</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h3> {{ 'Home.Winery.1' | translate }}</h3>
+          <img @fade src="assets/images/Winery/imagecompressor/Botti.jpg" alt="botti di vino in cantina" class="center-block resize-image img-rounded">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h3> {{ 'Home.Winery.2' | translate }}</h3>
+          <img src="assets/images/Large formats/imagecompressor/MagnumAromatiche.jpg" alt="magnum aromatiche grandi formati"
+            class="center-block resize-image img-rounded">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-sm-12 text-center">
+          <h1> <b>{{ 'Home.Tradition.Title' | translate }}</b></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h3> {{ 'Home.Tradition.1' | translate }}</h3>
+          <img src="assets/images/Tradition/imagecompressor/Famiglia.jpg" alt="tradizioni di famiglia" class="center-block resize-image img-rounded">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h3> {{ 'Home.Tradition.2' | translate }}</h3>
+          <img src="assets/images/Tradition/tradizione.jpg" alt="tradizioni di famiglia storica" class="center-block resize-image-magnum img-rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

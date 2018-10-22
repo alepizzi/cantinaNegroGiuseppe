@@ -1,0 +1,112 @@
+{
+  "Title": "Cantina {{name}}",
+  "Format": "Grandi formati",
+  "FormatAvailable": "Formati disponibili",
+  "Menu": {
+    "Where": "Dove siamo",
+    "Contacts": "Contatti",
+    "Download": "Download",
+    "Wines": "Vini",
+    "Lang": "Lingua",
+    "Tasting": "Degustazione"
+  },
+  "Home": {
+    "Winery": {
+      "Title": "L'Azienda",
+      "1": "La cantina Negro Giuseppe è situata nel Comune di Neive, una delle zone più rinomate per la produzione dei vini tipici albesi.",
+      "2": "L’azienda condotta direttamente dal titolare, enologo Giorgio Negro, ha improntato la produzione esclusivamente sulla qualità, destinata alla migliore ristorazione italiana ed estera."
+    },
+    "Tradition": {
+      "Title": "La Tradizione",
+      "1": "Fin dai primi anni ‘50, Giuseppe Negro conduceva direttamente i vigneti e la Cantina vinificando piccole quantità di vino di eccellente qualità.",
+      "2": "È con la stessa passione che oggi il figlio produce vini volti a soddisfare la clientela più attenta ed esigente."
+    }
+  },
+  "Where": {
+    "1": "La cantina Negro Giuseppe si trova in Località Gallina, nel comune di Neive.",
+    "2": "Dista pochi chilometri da Alba ed è facilmente raggiungibile tramite l’autostrada A33, uscita Castagnito."
+  },
+  "Download": {
+    "Profile": "Scarica il profilo",
+    "Image": "Scarica l'immagine"
+  },
+  "Wine": {
+    "Name": "{{name}}",
+    "Title": "I nostri vini",
+    "LargeFormats": "Grandi formati",
+    "Grape": {
+      "Title": "VITIGNO",
+      "Content": "{{grape}}"
+    },
+    "distillation": {
+      "Title": "DISTILLAZIONE",
+      "Content": "{{ITDistillation}}"
+    },
+    "still": {
+      "Title": "IMPIANTO",
+      "Content": "{{ITStill}}"
+    },
+    "grapeDebris": {
+      "Title": "VINACCE",
+      "Content": "{{grapeDebris}}"
+    },
+    "Fermentation": {
+      "Title": "FERMENTAZIONE",
+      "Content": "{{ITFermentation}}"
+    },
+    "Aging": {
+      "Title": "MATURAZIONE",
+      "Content": "{{ITAging}}"
+    },
+    "Characteristics": {
+      "Title": "CARATTERISTICHE",
+      "Content1": "{{ITCharacteristics1}}",
+      "Content2": "{{ITCharacteristics2}}",
+      "Content3": "{{ITCharacteristics3}}"
+    },
+    "Notes": {
+      "Title": "NOTE",
+      "Content": "{{ITNotes}}"
+    }
+  },
+  "Arneis": {
+    "Grape": {
+      "Title": "VITIGNO",
+      "Content": "Arneis"
+    },
+    "Fermentation": {
+      "Title": "FERMENTAZIONE",
+      "Content": "Fermentazione alcoolica in acciaio per circa 20 giorni ad una temperatura controllata di 16° C."
+    },
+    "Aging": {
+      "Title": "MATURAZIONE",
+      "Content": "Circa 6 mesi in acciaio."
+    },
+    "Characteristics": {
+      "Title": "CARATTERISTICHE",
+      "Content1": "Colore: giallo paglierino tenue.",
+      "Content2": "Profumo: ampio, fresco, con sentori floreali.",
+      "Content3": "Sapore: fresco, armonico, morbido."
+    },
+    "Notes": {
+      "Title": "NOTE",
+      "Content": "Adatto da aperitivo, ottimo con antipasti leggeri e pesce, dà il meglio di sé nei primi 3 anni. Temperatura di servizio 8-10° C."
+    }
+  },
+  "Contacts": {
+    "Title": "Per contattare la nostra Cantina e richiedere informazioni per una visita"
+  },
+  "Tasting": {
+    "Title": "Degustazione",
+    "1": "È possibile prenotare un tour dell’azienda. L’esperienza inizia con la visita dei locali dove avviene la vinificazione, la maturazione del vino nelle botti di legno e l’affinamento in bottiglia.",
+    "2": "Seguirà la degustazione guidata dei nostri vini nell’antica cantinetta oppure sulla terrazza Monsú  affacciata direttamente sulle vigne di produzione.",
+    "3": "È gradita la prenotazione:"
+  },
+  "Intro": "Hello I am {{name}}, I am {{age}} years old.",
+  "Startpage": {
+    "TranslationSections": "Hello World"
+  },
+  "Aboutpage": {
+    "TranslationSections": "We are letsboot"
+  }
+}
