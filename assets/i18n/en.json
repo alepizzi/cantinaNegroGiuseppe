@@ -1,0 +1,88 @@
+{
+  "Title": "{{name}}’s winery",
+  "Format": "Large formats",
+  "FormatAvailable": "Available formats",
+  "Menu": {
+    "Where": "Where we are",
+    "Contacts": "Contacts",
+    "Download": "Download",
+    "Wines": "Wines",
+    "Lang": "Language",
+    "Tasting": "Tasting"
+  },
+  "Home": {
+    "Winery": {
+      "Title": "The Winery",
+      "1": "Giuseppe Negro’s winery is located  in the municipal district of Neive, one of the most renowned areas for the production of the typical local wines “Vini Albesi”.",
+      "2": "The firm is managed directly by the owner, oenologist Giorgio Negro who characterizes his production exclusively on quality; his wines are destined to the best restaurants in Italy and abroad."
+    },
+    "Tradition": {
+      "Title": "The Tradition",
+      "1": "Since the early 50’s, Giuseppe Negro ran first hand his vineyard and the winery, making small quantities of excellent quality wine.",
+      "2": "Now with the same passion his son produces wines that aim to satisfy the most expert and demanding clientele."
+    }
+  },
+  "Where": {
+    "1": "Negro Giuseppe winery is located in Gallina place, in the municipal district of Neive.",
+    "2": "A few kilometres from Alba, it is easily reachable through A33 motorway, Castagnito exit."
+  },
+  "Download": {
+    "Profile": "Download profile",
+    "Image": "Download image"
+  },
+  "Wine": {
+    "Name": "{{name}}",
+    "Title": "Our wines",
+    "LargeFormats": "Large formats",
+    "Grape": {
+      "Title": "GRAPE VARIETY",
+      "Content": "{{name}}"
+    },
+    "distillation": {
+      "Title": "DISTILLATION",
+      "Content": "{{ENDistillation}}"
+    },
+    "still": {
+      "Title": "STILL",
+      "Content": "{{ENStill}}"
+    },
+    "grapeDebris": {
+      "Title": "GRAPE DEBRIS",
+      "Content": "{{grapeDebris}}"
+    },
+    "Fermentation": {
+      "Title": "FERMENTATION",
+      "Content": "{{ENFermentation}}"
+    },
+    "Aging": {
+      "Title": "AGING",
+      "Content": "{{ENAging}}"
+    },
+    "Characteristics": {
+      "Title": "CHARACTERISTICS",
+      "Content1": "{{ENCharacteristics1}}",
+      "Content2": "{{ENCharacteristics2}}",
+      "Content3": "{{ENCharacteristics3}}"
+    },
+    "Notes": {
+      "Title": "NOTES",
+      "Content": "{{ENNotes}}"
+    }
+  },
+  "Contacts": {
+    "Title": "To contact our winery and book a tasting of our wines"
+  },
+  "Tasting": {
+    "Title": "Tasting",
+    "1": "Tours of the winery can be arranged. The experience starts with a visit to the wine cellars where the winemaking and aging in wood and the bottle take place.",
+    "2": "A tasting of our wines follows in the old cellar or on the Monsú  terrace overlooking the vineyards.",
+    "3": "Bookings welcome:"
+  },
+  "Intro": "Hello I am {{name}}, I am {{age}} years old.",
+  "Startpage": {
+    "TranslationSections": "Hello World"
+  },
+  "Aboutpage": {
+    "TranslationSections": "We are letsboot"
+  }
+}

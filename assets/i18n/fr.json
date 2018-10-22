@@ -1,0 +1,88 @@
+{
+  "Title": "Domaine viticole {{name}}",
+  "Format": "Grands formats",
+  "FormatAvailable": "Formats disponibles",
+  "Menu": {
+    "Where": "Où nous sommes",
+    "Contacts": "Contacts",
+    "Download": "Download",
+    "Wines": "Vins",
+    "Lang": "Langue",
+    "Tasting": "Dégustation"
+  },
+  "Home": {
+    "Winery": {
+      "Title": "L’enterprise",
+      "1": "Le domaine viticole “Cantina Negro Giuseppe”se situe près de la ville de Neive, un des terroirs les plus réputés dans la production des “Vini Albesi”, vins typiques locaux.",
+      "2": "L’entreprise est dirigée par son propriétaire, l’oenologue Giorgio Negro. Elle se concentre entiérement à la production de vins de qualité, destinés aux plus prestigieux restaurants tant en Italie qu’à l’etranger."
+    },
+    "Tradition": {
+      "Title": "La Tradition",
+      "1": "Dés le déebut des années 50, Giuseppe Negro s’occupait lui-même du domaine et de sa production, vinifiant de petites quantités de vin d’excellente qualité.",
+      "2": "C’est avec la même passion que son fils produit aujourd’hui des vins destinés à satisfaire une clientéle attentive et exigeante."
+    }
+  },
+  "Where": {
+    "1": "La cave Negro Giuseppe se trouve dans la localité Gallina de la commune de Neive.",
+    "2": "A peu de kilomètres de la ville d'Alba, elle est facilement accessible par l'autoroute A33, sortie Castagnito."
+  },
+  "Download": {
+    "Profile": "Télécharger le profil",
+    "Image": "Télécharger l'image"
+  },
+  "Wine": {
+    "Name": "{{name}}",
+    "Title": "Nos vins",
+    "LargeFormats": "Grands formats",
+    "Grape": {
+      "Title": "VIGNOBLE",
+      "Content": "{{name}}"
+    },
+    "distillation": {
+      "Title": "DISTILLATION",
+      "Content": "{{FRDistillation}}"
+    },
+    "still": {
+      "Title": "INSTALLATION",
+      "Content": "{{FRStill}}"
+    },
+    "grapeDebris": {
+      "Title": "VIGNOBLE",
+      "Content": "{{grapeDebris}}"
+    },
+    "Fermentation": {
+      "Title": "FERMENTATION",
+      "Content": "{{FRFermentation}}"
+    },
+    "Aging": {
+      "Title": "VIEILLISSEMENT",
+      "Content": "{{FRAging}}"
+    },
+    "Characteristics": {
+      "Title": "CARACTÉRISTIQUES",
+      "Content1": "{{FRCharacteristics1}}",
+      "Content2": "{{FRCharacteristics2}}",
+      "Content3": "{{FRCharacteristics3}}"
+    },
+    "Notes": {
+      "Title": "CONSEILS",
+      "Content": "{{FRNotes}}"
+    }
+  },
+  "Contacts": {
+    "Title": "Pour contacter notre Cave et demander des informations pour une visite"
+  },
+  "Tasting": {
+    "Title": "Dégustation",
+    "1": "Il est possible d’organiser, sur réservation, une visite de la cave à vin. L’expérience débute par la visite des locaux dans lesquels se font la vinification, la maturation du vin en fûts de bois et le vieillissement en bouteille.",
+    "2": "S’ensuivra une dégustation guidée de nos vins dans l’antique cave à vin ou sur la terrasse Monsú  avec vue directe et suggestive sur les vignes de production.",
+    "3": "La réservation est recommandée:"
+  },
+  "Intro": "Bonjour je m'appelle {{name}}, j'ai {{age}} ans.",
+  "Startpage": {
+    "TranslationSections": "Bonjour Monde"
+  },
+  "Aboutpage": {
+    "TranslationSections": "Nous sommes letsboot"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "Title": "Cantina {{name}}",
+  "Format": "Große Formate",
+  "FormatAvailable": "Verfügbare Formate",
+  "Menu": {
+    "Where": "Wo wir sind",
+    "Contacts": "Kontakte",
+    "Download": "Herunterladen",
+    "Wines": "Weine",
+    "Lang": "Sprache",
+    "Tasting": "Verkostung"
+  },
+  "Home": {
+    "Winery": {
+      "Title": "Der Betrieb",
+      "1": "Die Cantina Negro Giuseppe befindet sich auf dem Gebiet der Gemeinde Neive. Die Gegend ist bekannt für ihre typischen Weine mit hohem Qualitätsstandard.",
+      "2": "Der Betrieb wird von Giorgio Negro, dem heutigen Besitzer, geführt und produziert exklusive Weine für eine anspruchsvolle Kundschaft im In-und Ausland."
+    },
+    "Tradition": {
+      "Title": "Die Tradition",
+      "1": "Wie schon sein Vater Giuseppe in den Fünfziger Jahren, kümmert sich Giorgio Negro selber um seinen Weinkeller und bürgt persönlich für die ausgezeichnete Qualität seiner Weine.",
+      "2": ""
+    }
+  },
+  "Where": {
+    "1": "Das Negro Giuseppe Weingut befindet sich in der Ortschaft Gallina der Gemeinde Neive.",
+    "2": "Es liegt nur wenige Kilometer von der Stadt Alba entfernt und ist bequem über die Autobahn A33, Ausfahrt Castagnito, erreichbar."
+  },
+  "Download": {
+    "Profile": "Profil herunterladen",
+    "Image": "Bild herunterladen"
+  },
+  "Wine": {
+    "Name": "{{name}}",
+    "Title": "Unsere Weine",
+    "LargeFormats": "Große Formate",
+    "Grape": {
+      "Title": "WEINSTOCK",
+      "Content": "{{name}}"
+    },
+    "distillation": {
+      "Title": "DESTILLATION",
+      "Content": "{{DEDistillation}}"
+    },
+    "still": {
+      "Title": "ANLAGE",
+      "Content": "{{DEStill}}"
+    },
+    "grapeDebris": {
+      "Title": "TRESTER",
+      "Content": "{{grapeDebris}}"
+    },
+    "Fermentation": {
+      "Title": "GÄRUNG",
+      "Content": "{{DEFermentation}}"
+    },
+    "Aging": {
+      "Title": "REIFE",
+      "Content": "{{DEAging}}"
+    },
+    "Characteristics": {
+      "Title": "EIGENSCHAFTEN",
+      "Content1": "{{DECharacteristics1}}",
+      "Content2": "{{DECharacteristics2}}",
+      "Content3": "{{DECharacteristics3}}"
+    },
+    "Notes": {
+      "Title": "BEMERKUNGEN",
+      "Content": "{{DENotes}}"
+    }
+  },
+  "Contacts": {
+    "Title": "Um unseren Weinkeller zu kontaktieren und nach Informationen für einen Besuch zu fragen"
+  },
+  "Tasting": {
+    "Title": "Verkostung",
+    "1": "Es ist möglich einen Besuch des Weinkellers zu organisieren. Die Tour beginnt mit einem Besuch in den Räumen, in denen die Weinbereitung, den Weinausbau in Holzfässern und die Veredelung in Flaschen stattfinden.",
+    "2": "Anschließend wird eine geführte Weinprobe im alten Weinkeller oder auf der Monsú  Terrasse mit direkter Sicht auf die Produktionsweinberge angeboten.",
+    "3": "Die Reservierung ist empfohlen:"
+  },
+  "Intro": "Hello I am {{name}}, I am {{age}} years old.",
+  "Startpage": {
+    "TranslationSections": "Hello World"
+  },
+  "Aboutpage": {
+    "TranslationSections": "We are letsboot"
+  }
+}
