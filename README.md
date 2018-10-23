@@ -1,6 +1,11 @@
 # PROJECTNEGROCANTINA
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+nvm use 6.10.1
+git status --> Mi dice le modifiche ai file
+git add . --> Aggiunge i nuovi file
+git commit -a -m "Messaggio della commit"
+git push
 
 ##Requirements
 Node version 6.10.1
