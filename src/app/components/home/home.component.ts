@@ -48,7 +48,7 @@ export class HomeComponent implements OnInit {
       'class': ''
     },
     {
-      'name': 'Roero Arneis D.O.C.G.',
+      'name': 'Roero Arneis D.O.C.G. "Arbeuj"',
       'link': '/wines/arneis',
       'class': ''
     },

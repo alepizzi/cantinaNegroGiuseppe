@@ -62,7 +62,7 @@ export class DownloadComponent implements OnInit {
       'downloadZIP': 'assets/download/MonsuRose.zip'
     },
     {
-      'name': 'Roero Arneis D.O.C.G.',
+      'name': 'Roero Arneis D.O.C.G. "Arbeuj"',
       'grape': 'Arneis',
       'photo': 'assets/images/Wines/Arneis.png',
       'urlLink': '/wines/arneis',

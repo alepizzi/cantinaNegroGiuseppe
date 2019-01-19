@@ -57,7 +57,7 @@ export class WineTemplateComponent implements OnInit {
       'id': 'ID_Monsú Rosé Langhe D.O.C. Rosato'
     },
     {
-      'name': 'Roero Arneis D.O.C.G.',
+      'name': 'Roero Arneis D.O.C.G. "Arbeuj"',
       'link': '/wines/arneis',
       'class': '',
       'id': 'ID_Roero Arneis D.O.C.G.'

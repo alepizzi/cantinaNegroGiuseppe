@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 export class ArneisComponent implements OnInit {
 
   arneis = {
-    'name': 'Roero Arneis D.O.C.G.',
+    'name': 'Roero Arneis D.O.C.G. "Arbeuj"',
     'grape': 'Arneis',
     'ITFermentation': 'Fermentazione alcoolica in acciaio per circa 20 giorni ad una temperatura controllata di 16° C.',
     'DEFermentation': 'Alkoholische Gärung im Stahltank während ca. 20 Tagen bei kontrollierter Temperatur von 16°C.',
