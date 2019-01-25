@@ -3,6 +3,7 @@ import { Component, Output, TemplateRef, ViewChild, OnInit } from '@angular/core
 import { BsModalService } from 'ngx-bootstrap/modal';
 import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 import { FacebookService, InitParams } from 'ngx-facebook';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -20,7 +21,13 @@ export class AppComponent implements OnInit {
   modalRef: BsModalRef;
   items: any[];
 
-  constructor(private modalService: BsModalService, private fb: FacebookService) {
+  constructor(private modalService: BsModalService, private fb: FacebookService, private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        (<any>window).ga('set', 'page', event.urlAfterRedirects);
+        (<any>window).ga('send', 'pageview');
+      }
+    });
     this.items = Array(15).fill(0);
     const initParams: InitParams = {
       appId: '200610240719668',
