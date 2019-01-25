@@ -34,8 +34,8 @@ export class DolcettoComponent implements OnInit {
     'ENNotes': 'Accompanies entire meal. Suitable for moderate aging. Serve at 18-20° C.',
     'FRNotes': 'Accompagné parfaitement tout le repas. Se prête à un vieillissement modéré. Servir à 18-20° C.',
     'photo': 'assets/images/Wines/Dolcetto.png',
-    'downloadPDF': 'assets/download/Barbera.pdf',
-    'downloadZIP': 'assets/download/Barbera.zip'
+    'downloadPDF': 'assets/download/Dolcetto.pdf',
+    'downloadZIP': 'assets/download/Dolcetto.zip'
   };
 
   constructor() { }
