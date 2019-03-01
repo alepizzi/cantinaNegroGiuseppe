@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 nvm use 6.10.1
 ng build --prod --output-path docs --base-href https://github.com/alepizzi/cantinaNegroGiuseppe/
 
-Copy doc/index.html into doc/404.html
+Copy doc/index.html into doc/404.html restore CNAME
 git status --> Mi dice le modifiche ai file
 git add . --> Aggiunge i nuovi file
 git commit -a -m "Messaggio della commit"
