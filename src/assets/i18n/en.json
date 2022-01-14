@@ -76,6 +76,10 @@
     "Title": "Tasting",
     "1": "Tours of the winery can be arranged. The experience starts with a visit to the wine cellars where the winemaking and aging in wood and the bottle take place.",
     "2": "A tasting of our wines follows in the old cellar or on the Monsú  terrace overlooking the vineyards.",
+    "Type": "Types of tasting:",
+    "Pulin": "PULIN WINE TASTING",
+    "Monsu": "GRAN MONSÚ WINE TASTING",
+    "Vendemmie": "GRANDI VENDEMMIE WINE TASTING",
     "3": "Bookings welcome:"
   },
   "Intro": "Hello I am {{name}}, I am {{age}} years old.",
