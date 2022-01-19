@@ -76,6 +76,10 @@
     "Title": "Dégustation",
     "1": "Il est possible d’organiser, sur réservation, une visite de la cave à vin. L’expérience débute par la visite des locaux dans lesquels se font la vinification, la maturation du vin en fûts de bois et le vieillissement en bouteille.",
     "2": "S’ensuivra une dégustation guidée de nos vins dans l’antique cave à vin ou sur la terrasse Monsú  avec vue directe et suggestive sur les vignes de production.",
+    "Type": "Types de dégustations:",
+    "Pulin": "DÉGUSTATION PULIN",
+    "Monsu": "DÉGUSTATION GRAN MONSÚ",
+    "Vendemmie": "DÉGUSTATION GRANDI VENDEMMIE",
     "3": "La réservation est recommandée:"
   },
   "Intro": "Bonjour je m'appelle {{name}}, j'ai {{age}} ans.",

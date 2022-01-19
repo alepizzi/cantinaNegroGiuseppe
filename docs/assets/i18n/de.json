@@ -76,6 +76,10 @@
     "Title": "Verkostung",
     "1": "Es ist möglich einen Besuch des Weinkellers zu organisieren. Die Tour beginnt mit einem Besuch in den Räumen, in denen die Weinbereitung, den Weinausbau in Holzfässern und die Veredelung in Flaschen stattfinden.",
     "2": "Anschließend wird eine geführte Weinprobe im alten Weinkeller oder auf der Monsú  Terrasse mit direkter Sicht auf die Produktionsweinberge angeboten.",
+    "Type": "Arten von Weinproben:",
+    "Pulin": "PULIN WEINPROBE",
+    "Monsu": "GRAN MONSÚ WEINPROBE",
+    "Vendemmie": "GRANDI VENDEMMIE WEINPROBE",
     "3": "Die Reservierung ist empfohlen:"
   },
   "Intro": "Hello I am {{name}}, I am {{age}} years old.",
