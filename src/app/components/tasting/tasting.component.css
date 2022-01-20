@@ -1,7 +1,5 @@
-ul {
-  text-align: center;
-  list-style-position: inside;
-  padding-inline-start: 0;
+.wine-list-item {
+  margin: 0px;
 }
 
 .tasting-type {
