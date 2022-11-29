@@ -79,7 +79,8 @@
     "Type": "Arten von Weinproben:",
     "Pulin": "PULIN WEINPROBE",
     "Monsu": "GRAN MONSÚ WEINPROBE",
-    "Vendemmie": "GRANDI VENDEMMIE WEINPROBE",
+    "Vendemmie": "BARBARESCO GRANDI VENDEMMIE WEINPROBE",
+    "variation": "Je nach Verfügbarkeit der zum Zeitpunkt der Verkostung Weine und Jahrgänge, koennte es zu Abweichungen kommen",
     "3": "Die Reservierung ist empfohlen:"
   },
   "Intro": "Hello I am {{name}}, I am {{age}} years old.",

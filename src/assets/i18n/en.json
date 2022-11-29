@@ -79,7 +79,8 @@
     "Type": "Types of tasting:",
     "Pulin": "PULIN WINE TASTING",
     "Monsu": "GRAN MONSÚ WINE TASTING",
-    "Vendemmie": "GRANDI VENDEMMIE WINE TASTING",
+    "Vendemmie": "BARBARESCO GRANDI VENDEMMIE WINE TASTING",
+    "variation": "According to the wines and vintages available at the time of the tastings, some changes could be make.",
     "3": "Bookings welcome:"
   },
   "Intro": "Hello I am {{name}}, I am {{age}} years old.",

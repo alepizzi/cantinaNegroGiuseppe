@@ -79,7 +79,8 @@
     "Type": "Types de dégustations:",
     "Pulin": "DÉGUSTATION PULIN",
     "Monsu": "DÉGUSTATION GRAN MONSÚ",
-    "Vendemmie": "DÉGUSTATION GRANDI VENDEMMIE",
+    "Vendemmie": "DÉGUSTATION BARBARESCO GRANDI VENDEMMIE",
+    "variation": "Basé sur les vins et les années disponibles au moment des dégustations, ils peuvent être des variations.",
     "3": "La réservation est recommandée:"
   },
   "Intro": "Bonjour je m'appelle {{name}}, j'ai {{age}} ans.",
