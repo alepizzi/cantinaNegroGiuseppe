@@ -80,7 +80,8 @@
     "Pulin": "PULIN WEINPROBE",
     "Monsu": "GRAN MONSÚ WEINPROBE",
     "Vendemmie": "GRANDI VENDEMMIE WEINPROBE",
-    "3": "Die Reservierung ist empfohlen:"
+    "3": "Die Reservierung ist empfohlen:",
+    "availability": "Je nach Verfügbarkeit der zum Zeitpunkt der Verkostung Weine und Jahrgänge, koennte es zu Abweichungen kommen."
   },
   "Intro": "Hello I am {{name}}, I am {{age}} years old.",
   "Startpage": {
