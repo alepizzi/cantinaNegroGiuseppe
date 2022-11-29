@@ -80,7 +80,8 @@
     "Pulin": "PULIN WINE TASTING",
     "Monsu": "GRAN MONSÚ WINE TASTING",
     "Vendemmie": "GRANDI VENDEMMIE WINE TASTING",
-    "3": "Bookings welcome:"
+    "3": "Bookings welcome:",
+    "availability": "According to the wines and vintages available at the time of the tastings, some changes could be make."
   },
   "Intro": "Hello I am {{name}}, I am {{age}} years old.",
   "Startpage": {

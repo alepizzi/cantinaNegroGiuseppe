@@ -25,10 +25,10 @@ export class WineTemplateComponent implements OnInit {
       id: "ID_Monsú  Langhe Nebbiolo D.O.C.",
     },
     {
-      name: 'Barbaresco D.O.C.G. "Pian Cavallo"',
+      name: 'Barbaresco D.O.C.G. "PianCavallo"',
       link: "/wines/barbarescoPianCavallo",
       class: "",
-      id: 'ID_Barbaresco D.O.C.G. "Pian Cavallo"',
+      id: 'ID_Barbaresco D.O.C.G. "PianCavallo"',
     },
     {
       name: 'Barbaresco D.O.C.G. "Gallina"',
@@ -43,10 +43,10 @@ export class WineTemplateComponent implements OnInit {
       id: 'ID_Barbera d\'Alba D.O.C. "Pulin"',
     },
     {
-      name: 'Dolcetto d\'Alba D.O.C. "Pian Cavallo"',
+      name: 'Dolcetto d\'Alba D.O.C. "PianCavallo"',
       link: "/wines/dolcetto",
       class: "",
-      id: 'ID_Dolcetto d\'Alba D.O.C. "Pian Cavallo"',
+      id: 'ID_Dolcetto d\'Alba D.O.C. "PianCavallo"',
     },
     {
       name: "Monsú Rosé Langhe D.O.C. Rosato",

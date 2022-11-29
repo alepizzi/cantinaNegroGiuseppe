@@ -18,6 +18,14 @@ git push
 ##Requirements
 Node version 6.10.1
 
+PER TORNARE INDIETRO A VECCHIA COMMIT E DEPLOYARLA
+git checkout 307a5cd # check out the commit that you want to reset to
+git checkout -b fixy # create a branch named fixy to do the work
+git merge -s ours master # merge master's history without changing any files
+git checkout master # switch back to master
+git merge fixy # and merge in the fixed branch
+git push # done, no need to force push!
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
