@@ -7,7 +7,7 @@ UPDATE
 angular cli 6.1.1 angular ^6.1.10
 
 PER FARE DEPLOY ESEGUIRE QUESTI COMANDI
-ng build --prod --output-path docs --base-href https://github.com/alepizzi/cantinaNegroGiuseppe/
+ng build --configuration production --output-path docs --base-href https://github.com/alepizzi/cantinaNegroGiuseppe/
 
 Copy docs/index.html into docs/404.html restore CNAME
 git status --> Mi dice le modifiche ai file

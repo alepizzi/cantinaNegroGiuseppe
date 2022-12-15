@@ -1,0 +1,120 @@
+<nav class="navbar-default navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="home">
+      <img
+        class="my-navbar-logo"
+        src="assets/images/Home.png"
+        alt="Home"
+        loading="lazy"
+        width="59"
+        height="59"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            aria-current="page"
+            (click)="onToggleMenu()"
+            routerLink="wines/monsuNebbiolo"
+            >{{ "Menu.Wines" | translate }}</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="tasting"
+            (click)="onToggleMenu()"
+            routerLinkActive="active"
+            >{{ "Menu.Tasting" | translate }}</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="onToggleMenu()" routerLink="download">{{
+            "Menu.Download" | translate
+          }}</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" (click)="onToggleMenu()" routerLink="where">{{
+            "Menu.Where" | translate
+          }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="onToggleMenu()" routerLink="contacts">{{
+            "Menu.Contacts" | translate
+          }}</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            {{ "Menu.Lang" | translate }}</a
+          >
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdown"
+          >
+            <li>
+              <div
+                class="dropdown-item lang"
+                (click)="onToggleMenu(); switchLanguage('it')"
+              >
+                <span class="fi fis fi-it"></span>
+                <p class="m-1">Italiano / Italian</p>
+              </div>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <div
+                class="dropdown-item lang"
+                (click)="onToggleMenu(); switchLanguage('en')"
+              >
+                <span class="fi fis fi-us"></span>
+                <p class="m-1">English / English</p>
+              </div>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <div
+                class="dropdown-item lang"
+                (click)="onToggleMenu(); switchLanguage('fr')"
+              >
+                <span class="fi fis fi-fr"></span>
+                <p class="m-1">Français / French</p>
+              </div>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <div
+                class="dropdown-item lang"
+                (click)="onToggleMenu(); switchLanguage('de')"
+              >
+                <span class="fi fis fi-de"></span>
+                <p class="m-1">Deutsch / German</p>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
