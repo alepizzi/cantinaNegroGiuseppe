@@ -2,6 +2,7 @@ export interface IWineList {
   [key: string]: IWine;
 }
 export interface IWine {
+  id: string;
   name: string;
   grape?: string;
   grapeDebris?: string;

@@ -1,14 +1,15 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
-import { Subscription } from 'rxjs';
-import { thumbnailAnimation } from '../animations';
-import { winesList } from './wine.utils';
+import { Component, OnDestroy, OnInit } from "@angular/core";
+import { ActivatedRoute, NavigationEnd, Router } from "@angular/router";
+import { LangChangeEvent, TranslateService } from "@ngx-translate/core";
+import { Subscription } from "rxjs";
+import { thumbnailAnimation } from "../animations";
+import { winesList } from "./wine.utils";
 
 @Component({
-  selector: 'app-wine-template',
-  templateUrl: './wine-template.component.html',
+  selector: "app-wine-template",
+  templateUrl: "./wine-template.component.html",
   animations: [thumbnailAnimation],
-  styleUrls: ['./wine-template.component.sass'],
+  styleUrls: ["./wine-template.component.sass"],
 })
 export class WineTemplateComponent implements OnInit, OnDestroy {
   show075Formats = false;
@@ -18,63 +19,69 @@ export class WineTemplateComponent implements OnInit, OnDestroy {
   showFormats = false;
   isGrappa = false;
   isLarge = false;
+  currentLang = "it";
   private subscription: Subscription = new Subscription();
   private routerSubscription: Subscription = new Subscription();
+  private langSubscription: Subscription = new Subscription();
   winesList: any[] = [
     {
-      name: 'Monsú  Langhe Nebbiolo D.O.C.',
-      link: '/wines/monsuNebbiolo',
-      class: '',
-      id: 'ID_Monsú  Langhe Nebbiolo D.O.C.',
+      name: "Monsú Langhe Nebbiolo D.O.C.",
+      link: "/wines/monsuNebbiolo",
+      class: "",
+      id: "ID_Nebbiolo",
     },
     {
       name: 'Barbaresco D.O.C.G. "PianCavallo"',
-      link: '/wines/barbarescoPianCavallo',
-      class: '',
-      id: 'ID_Barbaresco D.O.C.G. "PianCavallo"',
+      link: "/wines/barbarescoPianCavallo",
+      class: "",
+      id: "ID_Barbaresco_PianCavallo",
     },
     {
       name: 'Barbaresco D.O.C.G. "Gallina"',
-      link: '/wines/barbarescoGallina',
-      class: '',
-      id: 'ID_Barbaresco D.O.C.G. "Gallina"',
+      link: "/wines/barbarescoGallina",
+      class: "",
+      id: "ID_Barbaresco_Gallina",
     },
     {
       name: 'Barbera d\'Alba D.O.C. "Pulin"',
-      link: '/wines/barbera',
-      class: '',
-      id: 'ID_Barbera d\'Alba D.O.C. "Pulin"',
+      link: "/wines/barbera",
+      class: "",
+      id: "ID_Barbera",
     },
     {
       name: 'Dolcetto d\'Alba D.O.C. "PianCavallo"',
-      link: '/wines/dolcetto',
-      class: '',
-      id: 'ID_Dolcetto d\'Alba D.O.C. "PianCavallo"',
+      link: "/wines/dolcetto",
+      class: "",
+      id: "ID_Dolcetto",
     },
     {
-      name: 'Monsú Rosé Langhe D.O.C. Rosato',
-      link: '/wines/monsuRose',
-      class: '',
-      id: 'ID_Monsú Rosé Langhe D.O.C. Rosato',
+      name: "Monsú Rosé Langhe D.O.C. Rosato",
+      link: "/wines/monsuRose",
+      class: "",
+      id: "ID_Rosé",
     },
     {
       name: 'Roero Arneis D.O.C.G. "Arbeuj"',
-      link: '/wines/arneis',
-      class: '',
-      id: 'ID_Roero Arneis D.O.C.G.',
+      link: "/wines/arneis",
+      class: "",
+      id: "ID_Arneis",
     },
     {
-      name: 'Grappa Monsú ',
-      link: '/wines/grappa',
-      class: '',
-      id: 'ID_Grappa Monsú ',
+      name: "Grappa Monsú",
+      link: "/wines/grappa",
+      class: "",
+      id: "ID_Grappa",
     },
   ];
 
   private _wine: any;
   public transitionState: boolean = false;
 
-  constructor(private route: ActivatedRoute, private router: Router) {}
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private translate: TranslateService
+  ) {}
 
   ngOnInit() {
     this.subscription = this.route.params.subscribe((params: any) => {
@@ -87,7 +94,7 @@ export class WineTemplateComponent implements OnInit, OnDestroy {
       } else {
         this.showFormats = false;
       }
-      if (currentWine.name === 'Grappa Monsú ') {
+      if (currentWine.id === "grappa") {
         this.isGrappa = true;
       } else {
         this.isGrappa = false;
@@ -97,9 +104,9 @@ export class WineTemplateComponent implements OnInit, OnDestroy {
       let largeActive = false;
       this.winesList.forEach((element) => {
         if (element.name === currentWine.name) {
-          element.class = 'list-group-item active';
+          element.class = "list-group-item active";
         } else if (!largeActive) {
-          element.class = 'list-group-item';
+          element.class = "list-group-item";
         }
       });
     });
@@ -110,32 +117,39 @@ export class WineTemplateComponent implements OnInit, OnDestroy {
       }
       window.scrollTo(0, 0);
     });
+
+    this.langSubscription = this.translate.onLangChange.subscribe(
+      (event: LangChangeEvent) => {
+        this.currentLang = event.lang;
+      }
+    );
   }
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
     this.routerSubscription.unsubscribe();
+    this.langSubscription.unsubscribe();
   }
 
   resetDefaultFormat(newRouterLink: string) {
     this.setShowFormat(0);
     this.router
-      .navigateByUrl('/', { skipLocationChange: true })
+      .navigateByUrl("/", { skipLocationChange: true })
       .then(() => this.router.navigate([newRouterLink]));
   }
 
   changeSlide(index: number) {
     const desiredFormat = this._wine.format[index].value;
-    if (desiredFormat === '0.75 l') {
+    if (desiredFormat === "0.75 l") {
       this.setShowFormat(0);
     }
-    if (desiredFormat === '1.5 l') {
+    if (desiredFormat === "1.5 l") {
       this.setShowFormat(1);
     }
-    if (desiredFormat === '3 l') {
+    if (desiredFormat === "3 l") {
       this.setShowFormat(2);
     }
-    if (desiredFormat === '5 l') {
+    if (desiredFormat === "5 l") {
       this.setShowFormat(3);
     }
   }
@@ -174,15 +188,15 @@ export class WineTemplateComponent implements OnInit, OnDestroy {
   showFormat(event: string) {
     if (event) {
       let name = event;
-      if (name.charAt(2) === '_') {
+      if (name.charAt(2) === "_") {
         name = name.slice(3);
       }
       const elements = document.getElementsByClassName(name);
       for (let i = 0; i < elements.length; i++) {
-        if (elements[i].classList.contains('wines-format-hidden')) {
-          elements[i].classList.remove('wines-format-hidden');
+        if (elements[i].classList.contains("wines-format-hidden")) {
+          elements[i].classList.remove("wines-format-hidden");
         } else {
-          elements[i].classList.add('wines-format-hidden');
+          elements[i].classList.add("wines-format-hidden");
         }
       }
     }

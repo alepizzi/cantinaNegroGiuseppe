@@ -143,6 +143,44 @@
                   <b>{{ "Wine.Notes.Title" | translate : wine }}:</b>
                   {{ "Wine.Notes.Content" | translate : wine }}
                 </p>
+                <small *ngIf="currentLang === 'it'">
+                  <b>Norme ambientali:</b>
+                  <small *ngIf="wine.id === 'monsuRose'">
+                    bottiglia GL70 (vetro), capsula C/ALU90 (metallo), tappo
+                    sughero FOR51 (organico). Per una corretta raccolta
+                    differenziata verificare le disposizioni del proprio
+                    comune.</small
+                  >
+                  <small
+                    *ngIf="
+                      wine.id === 'grappa' ||
+                      (wine.id === 'monsuNebbiolo' && show15Formats)
+                    "
+                  >
+                    bottiglia GL71 (vetro), capsula TIN42 (metallo), tappo
+                    sughero FOR51 (organico). Per una corretta raccolta
+                    differenziata verificare le disposizioni del proprio
+                    comune.</small
+                  >
+                  <small *ngIf="show3Formats || show5Formats">
+                    bottiglia GL71 (vetro), tappo sughero FOR51 (organico). Per
+                    una corretta raccolta differenziata verificare le
+                    disposizioni del proprio comune.</small
+                  >
+                  <small
+                    *ngIf="
+                      (show075Formats ||
+                        (show15Formats && wine.id !== 'monsuNebbiolo')) &&
+                      wine.id !== 'grappa' &&
+                      wine.id !== 'monsuRose'
+                    "
+                  >
+                    bottiglia GL71 (vetro), capsula C/ALU90 (metallo), tappo
+                    sughero FOR51 (organico). Per una corretta raccolta
+                    differenziata verificare le disposizioni del proprio
+                    comune.</small
+                  >
+                </small>
               </div>
             </div>
           </div>
