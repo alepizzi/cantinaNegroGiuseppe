@@ -81,7 +81,8 @@
     "Monsu": "GRAN MONSÚ WEINPROBE",
     "Vendemmie": "BARBARESCO GRANDI VENDEMMIE WEINPROBE",
     "3": "Je nach Verfügbarkeit der zum Zeitpunkt der Verkostung Weine und Jahrgänge, koennte es zu Abweichungen kommen",
-    "4": "Die Reservierung ist empfohlen:"
+    "4": "Die Reservierung ist empfohlen:",
+    "or": "oder"
   },
   "Intro": "Hello I am {{name}}, I am {{age}} years old.",
   "Startpage": {

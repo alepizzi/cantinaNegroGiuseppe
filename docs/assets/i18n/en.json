@@ -81,7 +81,8 @@
     "Monsu": "GRAN MONSÚ WINE TASTING",
     "Vendemmie": "BARBARESCO GRANDI VENDEMMIE WINE TASTING",
     "3": "According to the wines and vintages available at the time of the tastings, some changes could be make.",
-    "4": "Bookings welcome:"
+    "4": "Bookings welcome:",
+    "or": "or"
   },
   "Intro": "Hello I am {{name}}, I am {{age}} years old.",
   "Startpage": {
