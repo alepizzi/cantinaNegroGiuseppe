@@ -19,7 +19,7 @@ export class WineTemplateComponent implements OnInit, OnDestroy {
   showFormats = false;
   isGrappa = false;
   isLarge = false;
-  currentLang = "it";
+  currentLang;
   private subscription: Subscription = new Subscription();
   private routerSubscription: Subscription = new Subscription();
   private langSubscription: Subscription = new Subscription();
@@ -81,7 +81,9 @@ export class WineTemplateComponent implements OnInit, OnDestroy {
     private route: ActivatedRoute,
     private router: Router,
     private translate: TranslateService
-  ) {}
+  ) {
+    this.currentLang = translate.currentLang || translate.defaultLang;
+  }
 
   ngOnInit() {
     this.subscription = this.route.params.subscribe((params: any) => {
