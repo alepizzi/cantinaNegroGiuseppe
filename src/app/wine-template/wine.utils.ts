@@ -6,13 +6,13 @@ export const winesList: IWineList = {
     name: 'Roero Arneis D.O.C.G. "Arbeuj"',
     grape: "Arneis",
     ITFermentation:
-      "Fermentazione alcoolica in acciaio per circa 20 giorni ad una temperatura controllata di 16° C.",
+      "Fermentazione alcoolica in acciaio per circa 1 mese ad una temperatura controllata di 16° C.",
     DEFermentation:
-      "Alkoholische Gärung im Stahltank während ca. 20 Tagen bei kontrollierter Temperatur von 16°C.",
+      "Alkoholische Gärung im Stahltank während ca. 1 Monat bei kontrollierter Temperatur von 16°C.",
     ENFermentation:
-      "Alcoholic fermentation in stainless steel tanks for about 20 days at 16°C.",
+      "Alcoholic fermentation in stainless steel tanks for about 1 month at 16°C.",
     FRFermentation:
-      "Fermentation alcoolique en cuve d'inox pendant environ 20 jours à température contrôlée de 16°C.",
+      "Fermentation alcoolique en cuve d'inox pendant environ 1 mois à température contrôlée de 16°C.",
     ITAging: "Circa 6 mesi in acciaio.",
     DEAging: "ca. 6 Monate im Stahltank.",
     ENAging: "Around 6 months in stainless steel tanks.",
@@ -55,21 +55,21 @@ export const winesList: IWineList = {
     name: 'Barbaresco D.O.C.G. "Gallina"',
     grape: "Nebbiolo",
     ITFermentation:
-      "Fermentazione e macerazione in acciaio per circa 2 settimane ad una temperatura controllata di circa 30° C., segue fermentazione malolattica in fusti di rovere da 500 litri.",
+      "Fermentazione e macerazione in acciaio per circa 2 settimane ad una temperatura controllata di circa 28° C., segue fermentazione malolattica in fusti di rovere da 500 litri.",
     DEFermentation:
-      "Gärung und Maischung im Stahltank während ca. 2 Wochen bei kontrollierter Temperatur von 30°C; anschliessend malolaktische  äureumwandlung in Eichenfässen von 500 Litern.",
+      "Gärung und Maischung im Stahltank während ca. 2 Wochen bei kontrollierter Temperatur von 28°C; anschliessend malolaktische  äureumwandlung in Eichenfässen von 500 Litern.",
     ENFermentation:
-      "Fermentation and maceration in stainless steel tanks for 2 weeks at a controlled 30°C followed by malo-lactic fermentation in 500 litre oak casks.",
+      "Fermentation and maceration in stainless steel tanks for 2 weeks at a controlled 28°C followed by malo-lactic fermentation in 500 litre oak casks.",
     FRFermentation:
-      "Fermentation et macération en cuve d'inox pendant environ 2 semaines à température contrôlée de environ 30°C; suivie d'une fermetation malolactique en fût de chêne de 500 litres.",
+      "Fermentation et macération en cuve d'inox pendant environ 2 semaines à température contrôlée de environ 28°C; suivie d'une fermetation malolactique en fût de chêne de 500 litres.",
     ITAging:
-      "Circa 24 mesi in fusti di rovere da 500 litri e 6-12 mesi in bottiglia.",
+      "Circa 20 mesi in fusti di rovere da 500 litri e circa 10 mesi in bottiglia.",
     DEAging:
-      "ca. 24 Monate in Eichenfässern von 500 Litern und 6-12 Monate in der Flasche.",
+      "ca. 20 Monate in Eichenfässern von 500 Litern und ca. 10 Monate in der Flasche.",
     ENAging:
-      "Around 24 months in 500 litre oak casks and 6-12 months in the bottle.",
+      "Around 20 months in 500 litre oak casks and around 10 months in the bottle.",
     FRAging:
-      "Environ 24 mois en fût de chêne de 500 litres et 6-12 mois en bouteille.",
+      "Environ 20 mois en fût de chêne de 500 litres et environ 10 mois en bouteille.",
     ITCharacteristics1: "Colore: rosso granato.",
     DECharacteristics1: "Farbe: granatrot.",
     ENCharacteristics1: "Colour: garnet red.",
@@ -119,26 +119,78 @@ export const winesList: IWineList = {
       },
     ],
   },
+  barbarescoAlbesani: {
+    id: "barbarescoAlbesani",
+    name: 'Barbaresco D.O.C.G. "Albesani"',
+    grape: "Nebbiolo",
+    ITFermentation:
+      "Fermentazione e macerazione in acciaio per circa 2 settimane ad una temperatura controllata di circa 28°C, segue fermentazione malolattica in fusti di rovere da 500 litri.",
+    DEFermentation:
+      "Gärung und Maischung im Stahltank während ca. 2 Wochen bei kontrollierter temperatur von 28°C; anschliessend malolaktische äureumwandlung in Eichenfässen von 500 Litern.",
+    ENFermentation:
+      "Fermentation and maceration in stainless steel tanks for 2 weeks at a controlled temperature of 28°C followed by malo-lactic fermentation in 500-litre oak barrels.",
+    FRFermentation:
+      "Fermentation et macération en cuve d’inox pendant environ 2 semaines à température contrôlée de 28°C; suivie d’une fermetation malolactique en fût de chêne de 500 litres.",
+    ITAging:
+      "Circa 20 mesi in fusti di rovere da 500 litri e 10 mesi in bottiglia.",
+    DEAging:
+      "ca. 20 Monate in Eichenfässern von 500 Litern und 10 Monate in der Flasche.",
+    ENAging:
+      "About 20 months in 500 litre oak barrels and 10 months in the bottle.",
+    FRAging:
+      "Environ 20 mois en fût de chêne de 500 litres et 10 mois en bouteille.",
+    ITCharacteristics1: "Colore: rosso granato.",
+    DECharacteristics1: "Farbe: granatrot.",
+    ENCharacteristics1: "Colour: garnet red.",
+    FRCharacteristics1: "Robe: rouge grenade.",
+    ITCharacteristics2:
+      "Profumo: complesso, intenso con note speziate, di pepe nero.",
+    DECharacteristics2:
+      "Bukett: komplexes, intensives Aroma, erinnert an Gewürze und schwarzen Pfeffer.",
+    ENCharacteristics2:
+      "Bouquet: complex, intense, with hints of spices and black pepper.",
+    FRCharacteristics2:
+      "Bouquet: complexe, intense, aux senteurs d’épices et de poivre noir.",
+    ITCharacteristics3:
+      "Sapore: pieno e armonico, con tannini eleganti e avvolgenti, con finale lungo e persistente.",
+    DECharacteristics3:
+      "Geschmack: voll und harmonisch, elegante und umhüllende Tannine, langer und anhaltender Abgang.",
+    ENCharacteristics3:
+      "Flavour: full bodied and harmonious, with delicate and velvety tannins, with a long and persistent finish.",
+    FRCharacteristics3:
+      "Corps: plein et harmonieux, tanins delicates et veloteux, avec un final long et persistant.",
+    ITNotes:
+      "Accompagna ottimamente carni rosse, arrosti, selvaggina e formaggi; vino che è adatto anche a lunghi invecchiamenti. Temperatura di servizio 18-20° C.",
+    DENotes:
+      "Idealer Begleiter zu rotem Fleisch, Braten, Wild und Käse.Eignet sich auch für lange Lagerung. Trinktemperatur 18-20° C.",
+    ENNotes:
+      "Accompanies entire meal, including meats, roasts, game and cheese. Very suitable for longer aging too. Serve at 18-20° C.",
+    FRNotes:
+      "Accompagne parfaitement viandes rouges, rôtis, gibiers et fromages. Se prête à un long vieillissement. Servir à 18-20° C.",
+    photo: "assets/images/Wines/Barbaresco_albesani.png",
+    downloadPDF: "assets/download/BarbarescoAlbesani.pdf",
+   // downloadZIP: "assets/download/BarbarescoAlbesani.zip",
+  },
   barbarescoPianCavallo: {
     id: "barbarescoPianCavallo",
     name: 'Barbaresco D.O.C.G. "PianCavallo"',
     grape: "Nebbiolo",
     ITFermentation:
-      "Fermentazione e macerazione in acciaio per circa 2 settimane ad una temperatura controllata di circa 30° C., segue fermentazione malolattica in fusti di rovere da 500 litri.",
+      "Fermentazione e macerazione in acciaio per circa 2 settimane ad una temperatura controllata di circa 28° C., segue fermentazione malolattica in fusti di rovere da 500 litri.",
     DEFermentation:
-      "Gärung und Maischung im Stahltank während ca. 2 Wochen bei kontrollierter Temperatur von 30°C; anschliessend malolaktische  äureumwandlung in Eichenfässen von 500 Litern.",
+      "Gärung und Maischung im Stahltank während ca. 2 Wochen bei kontrollierter Temperatur von 28°C; anschliessend malolaktische  äureumwandlung in Eichenfässen von 500 Litern.",
     ENFermentation:
-      "Fermentation and maceration in stainless steel tanks for 2 weeks at a controlled 30°C followed by malo-lactic fermentation in 500 litre oak casks.",
+      "Fermentation and maceration in stainless steel tanks for 2 weeks at a controlled 28°C followed by malo-lactic fermentation in 500 litre oak casks.",
     FRFermentation:
-      "Fermentation et macération en cuve d'inox pendant environ 2 semaines à température contrôlée de environ 30°C; suivie d'une fermetation malolactique en fût de chêne de 500 litres.",
+      "Fermentation et macération en cuve d'inox pendant environ 2 semaines à température contrôlée de environ 28°C; suivie d'une fermetation malolactique en fût de chêne de 500 litres.",
     ITAging:
-      "Circa 24 mesi in fusti di rovere da 500 litri e 6-12 mesi in bottiglia.",
+      "Circa 20 mesi in fusti di rovere da 500 litri e circa 10 mesi in bottiglia.",
     DEAging:
-      "ca. 24 Monate in Eichenfässern von 500 Litern und 6-12 Monate in der Flasche.",
+      "ca. 20 Monate in Eichenfässern von 500 Litern und ca. 10 Monate in der Flasche.",
     ENAging:
-      "Around 24 months in 500 litre oak casks and 6-12 months in the bottle.",
+      "Around 20 months in 500 litre oak casks and around 10 months in the bottle.",
     FRAging:
-      "Environ 24 mois en fût de chêne de 500 litres et 6-12 mois en bouteille.",
+      "Environ 20 mois en fût de chêne de 500 litres et environ 10 mois en bouteille.",
     ITCharacteristics1: "Colore: rosso granato.",
     DECharacteristics1: "Farbe: granatrot.",
     ENCharacteristics1: "Colour: garnet red.",
@@ -189,7 +241,7 @@ export const winesList: IWineList = {
   },
   barbera: {
     id: "barbera",
-    name: 'Barbera d\'Alba D.O.C. "Pulin"',
+    name: 'Barbera d\'Alba Superiore D.O.C. "Pulin"',
     grape: "Barbera",
     ITFermentation:
       "Fermentazione e macerazione in acciaio per circa 2 settimane ad una temperatura controllata di 28° C.; segue fermentazione malolattica in fusti di rovere da 500 litri.",
@@ -200,12 +252,12 @@ export const winesList: IWineList = {
     FRFermentation:
       "Fermentation et macération en cuve d'inox pendant environ 2 semaines à température contrôlée de 28°C; suivie d'une fermetation malolactique en fût de chêne de 500 litres.",
     ITAging:
-      "Circa 10-12 mesi in fusti di rovere da 500 litri e 2 mesi in bottiglia.",
+      "Circa 10 mesi in fusti di rovere da 500 litri e circa 4 mesi in bottiglia.",
     DEAging:
-      "ca. 10-12 Monate in Eichenfässern von 500 Litern und 2 Monate in der Flasche.",
-    ENAging: "Around 10-12 months in oak casks and 2 months in the bottle.",
+      "ca. 10 Monate in Eichenfässern von 500 Litern und ca. 4 Monate in der Flasche.",
+    ENAging: "Around 10 months in oak casks and around 4 months in the bottle.",
     FRAging:
-      "Environ 10-12 mois en fût de chêne de 500 litres et 2 mois en bouteille.",
+      "Environ 10 mois en fût de chêne de 500 litres et environ 4 mois en bouteille.",
     ITCharacteristics1: "Colore: rosso rubino intenso.",
     DECharacteristics1: "Farbe: rubinrot intensiv.",
     ENCharacteristics1: "Colour: intense ruby red.",
@@ -330,23 +382,23 @@ export const winesList: IWineList = {
   },
   monsuNebbiolo: {
     id: "monsuNebbiolo",
-    name: "Monsú Langhe Nebbiolo D.O.C.",
+    name: "Monsú Langhe D.O.C. Nebbiolo",
     grape: "Nebbiolo",
     ITFermentation:
-      "Fermentazione e macerazione in acciaio per circa 2 settimane, ad una temperatura controllata di 30° C.; segue fermentazione malolattica in fusti di rovere da 500 litri.",
+      "Fermentazione e macerazione in acciaio per circa 2 settimane, ad una temperatura controllata di 28° C.; segue fermentazione malolattica in fusti di rovere da 500 litri.",
     DEFermentation:
-      "Gärung und Maischung im Stahltank während ca. 2 Wochen bei kontrollierter Temperatur von 30°C; anschliessend malolaktische Säureumwandlung in Eichenfässern von 500 Litern.",
+      "Gärung und Maischung im Stahltank während ca. 2 Wochen bei kontrollierter Temperatur von 28°C; anschliessend malolaktische Säureumwandlung in Eichenfässern von 500 Litern.",
     ENFermentation:
-      "Fermentation and maceration in stainless steel tanks for 2 weeks at a controlled 30°C followed by malolactic fermentation in 500 litre oak casks.",
+      "Fermentation and maceration in stainless steel tanks for 2 weeks at a controlled 28°C followed by malolactic fermentation in 500 litre oak casks.",
     FRFermentation:
-      "Fermentation et macération en cuve d'inox pendant environ 2 semaines à température contrôlée de 30°C; suivie d'une fermetation malolactique en fût de chêne de 500 litres.",
+      "Fermentation et macération en cuve d'inox pendant environ 2 semaines à température contrôlée de 28°C; suivie d'une fermetation malolactique en fût de chêne de 500 litres.",
     ITAging:
-      "Circa 18 mesi in fusti di rovere da 500 litri e 2 mesi in bottiglia.",
+      "Circa 14-16 mesi in fusti di rovere da 500 litri e circa 2 mesi in bottiglia.",
     DEAging:
-      "ca. 18 Monate in Eichenfässern von 500 Litern und 2 Monate in der Flasche.",
-    ENAging: "Around 18 months in oak casks and 2 months in the bottle.",
+      "ca. 14-16 Monate in Eichenfässern von 500 Litern und ca. 2 Monate in der Flasche.",
+    ENAging: "Around 14-16 months in oak casks and around 2 months in the bottle.",
     FRAging:
-      "Environ 18 mois en fût de chêne de 500 litres et 6-12 mois en bouteille.",
+      "Environ 14-16 mois en fût de chêne de 500 litres et environ 2 mois en bouteille.",
     ITCharacteristics1: "Colore: rosso granato.",
     DECharacteristics1: "Farbe: granatrot.",
     ENCharacteristics1: "Colour: garnet red.",
@@ -397,24 +449,24 @@ export const winesList: IWineList = {
   },
   monsuRose: {
     id: "monsuRose",
-    name: "Monsú Rosé Langhe D.O.C. Rosato",
+    name: "MonsúRosé Langhe D.O.C. Rosato",
     grape: "Nebbiolo",
     ITFermentation:
-      "Fermentazione alcolica in acciaio per circa 20 giorni a una temperatura controllata di 20°C.",
+      "Fermentazione alcolica in acciaio per circa 2 mesi a una temperatura controllata di 20°C.",
     DEFermentation:
-      "Alkoholische Gärung im Stahltank bei einer konstanten Temperatur von 20° C.",
+      "Alkoholische Gärung im Stahltank ca. 2 Monate bei einer konstanten Temperatur von 20° C.",
     ENFermentation:
-      "Alcoholic fermentation in stainless steel tanks for about 20 days at a controlled 20ºC.",
+      "Alcoholic fermentation in stainless steel tanks for about 2 months at a controlled 20ºC.",
     FRFermentation:
-      "Fermentation alcoolique en cuve d'inox pendant environ 20 jours à température contrôlée de 20ºC.",
+      "Fermentation alcoolique en cuve d'inox pendant environ 2 mois à température contrôlée de 20ºC.",
     ITAging: "Circa 6 mesi in acciaio.",
     DEAging: "ca. 6 Monate im Stahltank.",
     ENAging: "Around 6 months in stainless steel tanks.",
     FRAging: "Environ 6 mois en cuve d'inox.",
-    ITCharacteristics1: "Colore: rosa salmone.",
-    DECharacteristics1: "Farbe: Lachsrosa.",
-    ENCharacteristics1: "Colour: salmon pink.",
-    FRCharacteristics1: "Robe: rose saumon.",
+    ITCharacteristics1: "Colore: rosa tenue.",
+    DECharacteristics1: "Farbe: hellrosa.",
+    ENCharacteristics1: "Colour: pale pink.",
+    FRCharacteristics1: "Robe: rose pâle.",
     ITCharacteristics2:
       "Profumo: ampio, fresco, con sentori floreali e note fruttate.",
     DECharacteristics2:

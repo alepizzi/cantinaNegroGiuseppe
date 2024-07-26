@@ -4,6 +4,7 @@ import { LangChangeEvent, TranslateService } from "@ngx-translate/core";
 import { Subscription } from "rxjs";
 import { thumbnailAnimation } from "../animations";
 import { winesList } from "./wine.utils";
+import { Meta, Title } from "@angular/platform-browser";
 
 @Component({
   selector: "app-wine-template",
@@ -25,10 +26,16 @@ export class WineTemplateComponent implements OnInit, OnDestroy {
   private langSubscription: Subscription = new Subscription();
   winesList: any[] = [
     {
-      name: "Monsú Langhe Nebbiolo D.O.C.",
-      link: "/wines/monsuNebbiolo",
+      name: 'Barbaresco D.O.C.G. "Gallina"',
+      link: "/wines/barbarescoGallina",
       class: "",
-      id: "ID_Nebbiolo",
+      id: "ID_Barbaresco_Gallina",
+    },
+    {
+      name: 'Barbaresco D.O.C.G. “Albesani”',
+      link: "/wines/barbarescoAlbesani",
+      class: "",
+      id: "ID_Barbaresco_Albesani",
     },
     {
       name: 'Barbaresco D.O.C.G. "PianCavallo"',
@@ -37,13 +44,13 @@ export class WineTemplateComponent implements OnInit, OnDestroy {
       id: "ID_Barbaresco_PianCavallo",
     },
     {
-      name: 'Barbaresco D.O.C.G. "Gallina"',
-      link: "/wines/barbarescoGallina",
+      name: "Monsú Langhe D.O.C. Nebbiolo",
+      link: "/wines/monsuNebbiolo",
       class: "",
-      id: "ID_Barbaresco_Gallina",
+      id: "ID_Nebbiolo",
     },
     {
-      name: 'Barbera d\'Alba D.O.C. "Pulin"',
+      name: 'Barbera d\'Alba Superiore D.O.C. "Pulin"',
       link: "/wines/barbera",
       class: "",
       id: "ID_Barbera",
@@ -55,7 +62,7 @@ export class WineTemplateComponent implements OnInit, OnDestroy {
       id: "ID_Dolcetto",
     },
     {
-      name: "Monsú Rosé Langhe D.O.C. Rosato",
+      name: "MonsúRosé Langhe D.O.C. Rosato",
       link: "/wines/monsuRose",
       class: "",
       id: "ID_Rosé",
@@ -80,7 +87,10 @@ export class WineTemplateComponent implements OnInit, OnDestroy {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private translate: TranslateService
+    private translate: TranslateService,
+    private metaService: Meta,
+    private titleService: Title
+
   ) {
     this.currentLang = translate.currentLang || translate.defaultLang;
   }
@@ -90,6 +100,12 @@ export class WineTemplateComponent implements OnInit, OnDestroy {
       this.transitionState = !this.transitionState;
 
       const currentWine = winesList[params.id];
+      this.titleService.setTitle(`Cantina Negro Giuseppe: ${currentWine.name} `);
+      this.metaService.updateTag({ name: 'description', content: `Scopri il nostro vino ${currentWine.name}` });
+      this.metaService.updateTag({ name: 'og:title', content: `${currentWine.name}` });
+      this.metaService.updateTag({ name: 'og:description', content: `Scopri il nostro vino ${currentWine.name}` });
+      this.metaService.updateTag({ name: 'twitter:title', content: `${currentWine.name}` });
+      this.metaService.updateTag({ name: 'twitter:description', content: `Scopri il nostro vino ${currentWine.name}` });
       this._wine = currentWine;
       if (currentWine.format) {
         this.showFormats = true;

@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { fade } from "../animations";
+import { Meta, Title } from "@angular/platform-browser";
 
 @Component({
   selector: "app-download",
@@ -10,12 +11,20 @@ import { fade } from "../animations";
 export class DownloadComponent {
   wines: any[] = [
     {
-      name: "Monsú Langhe Nebbiolo D.O.C.",
+      name: 'Barbaresco D.O.C.G. "Gallina"',
       grape: "Nebbiolo",
-      photo: "assets/images/Wines/Monsu.png",
+      photo: "assets/images/Wines/Barbaresco_gallina.png",
+      urlLink: "/wines/barbarescoGallina",
+      downloadPDF: "assets/download/BarbarescoGallina.pdf",
+      downloadZIP: "assets/download/BarbarescoGallina.zip",
+    },
+    {
+      name: 'Barbaresco D.O.C.G. “Albesani”',
+      grape: "Nebbiolo",
+      photo: "assets/images/Wines/Barbaresco_albesani.png",
       urlLink: "/wines/arneis",
-      downloadPDF: "assets/download/Monsu.pdf",
-      downloadZIP: "assets/download/Monsu.zip",
+      downloadPDF: "assets/download/BarbarescoAlbesani.pdf",
+      //downloadZIP: "assets/download/BarbarescoAlbesani.zip",
     },
     {
       name: 'Barbaresco D.O.C.G. "PianCavallo"',
@@ -26,15 +35,15 @@ export class DownloadComponent {
       downloadZIP: "assets/download/BarbarescoPianCavallo.zip",
     },
     {
-      name: 'Barbaresco D.O.C.G. "Gallina"',
+      name: "Monsú Langhe D.O.C. Nebbiolo",
       grape: "Nebbiolo",
-      photo: "assets/images/Wines/Barbaresco_gallina.png",
-      urlLink: "/wines/barbarescoGallina",
-      downloadPDF: "assets/download/BarbarescoGallina.pdf",
-      downloadZIP: "assets/download/BarbarescoGallina.zip",
+      photo: "assets/images/Wines/Monsu.png",
+      urlLink: "/wines/arneis",
+      downloadPDF: "assets/download/Monsu.pdf",
+      downloadZIP: "assets/download/Monsu.zip",
     },
     {
-      name: 'Barbera d\'Alba D.O.C."Pulin"',
+      name: 'Barbera d\'Alba Superiore D.O.C."Pulin"',
       grape: "Barbera",
       photo: "assets/images/Wines/Barbera.png",
       urlLink: "/wines/arneis",
@@ -50,7 +59,7 @@ export class DownloadComponent {
       downloadZIP: "assets/download/Dolcetto.zip",
     },
     {
-      name: "Monsú Rosé Langhe D.O.C. Rosato",
+      name: "MonsúRosé Langhe D.O.C. Rosato",
       grape: "Nebbiolo",
       photo: "assets/images/Wines/Rose.png",
       urlLink: "/wines/arneis",
@@ -74,4 +83,17 @@ export class DownloadComponent {
       downloadZIP: "assets/download/GrappaMonsu.zip",
     },
   ];
+
+  constructor(
+    private metaService: Meta,
+    private titleService: Title
+
+  ) {
+      this.titleService.setTitle(`Cantina Negro Giuseppe: Download `);
+      this.metaService.updateTag({ name: 'description', content: `Scarica tutti i profili e le immagini dei nostri vini Barbaresco, Barbera, Arneis, Dolcetto, Monsù e Grappa.` });
+      this.metaService.updateTag({ name: 'og:title', content: `Download` });
+      this.metaService.updateTag({ name: 'og:description', content: `Scarica tutti i profili e le immagini dei nostri vini Barbaresco, Barbera, Arneis, Dolcetto, Monsù e Grappa.` });
+      this.metaService.updateTag({ name: 'twitter:title', content: `Download` });
+      this.metaService.updateTag({ name: 'twitter:description', content: `Scarica tutti i profili e le immagini dei nostri vini Barbaresco, Barbera, Arneis, Dolcetto, Monsù e Grappa.` });
+  }
 }

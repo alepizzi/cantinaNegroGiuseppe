@@ -36,7 +36,7 @@
               >
             </p>
           </div>
-          <div class="col-xs-6 text-center">
+          <div  *ngIf="wine.downloadZIP" class="col-xs-6 text-center">
             <p>
               <a
                 href="{{ wine.downloadZIP }}"

@@ -10,8 +10,13 @@ import { fade } from "../animations";
 export class HomeComponent {
   winesList: any[] = [
     {
-      name: "Monsú Langhe Nebbiolo D.O.C.",
-      link: "/wines/monsuNebbiolo",
+      name: 'Barbaresco D.O.C.G. "Gallina"',
+      link: "/wines/barbarescoGallina",
+      class: "",
+    },
+    {
+      name: 'Barbaresco D.O.C.G. “Albesani”"',
+      link: "/wines/barbarescoAlbesani",
       class: "",
     },
     {
@@ -20,12 +25,12 @@ export class HomeComponent {
       class: "",
     },
     {
-      name: 'Barbaresco D.O.C.G. "Gallina"',
-      link: "/wines/barbarescoGallina",
+      name: "Monsú Langhe D.O.C. Nebbiolo",
+      link: "/wines/monsuNebbiolo",
       class: "",
     },
     {
-      name: 'Barbera d\'Alba D.O.C. "Pulin"',
+      name: 'Barbera d\'Alba Superiore D.O.C. "Pulin"',
       link: "/wines/barbera",
       class: "",
     },
@@ -35,7 +40,7 @@ export class HomeComponent {
       class: "",
     },
     {
-      name: "Monsú Rosé Langhe D.O.C. Rosato",
+      name: "MonsúRosé Langhe D.O.C. Rosato",
       link: "/wines/monsuRose",
       class: "",
     },

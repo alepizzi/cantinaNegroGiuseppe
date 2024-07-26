@@ -36,7 +36,7 @@
     "LargeFormats": "Grands formats",
     "Grape": {
       "Title": "VIGNOBLE",
-      "Content": "{{name}}"
+      "Content": "{{grape}}"
     },
     "distillation": {
       "Title": "DISTILLATION",

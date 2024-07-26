@@ -4,7 +4,7 @@
       class="col-xs-12 col-sm-12 col-md-3 menu-wine school-options-dropdown text-center"
     >
       <div class="text-center d-none d-md-block">
-        <h1>{{ "Wine.Title" | translate }}</h1>
+        <h2>{{ "Wine.Title" | translate }}</h2>
       </div>
       <div class="list-group d-none d-md-block">
         <a
@@ -50,22 +50,22 @@
               *ngIf="show075Formats && showFormats"
               class="col col-sm-12 text-center mt-2"
             >
-              <h2>{{ "Wine.Name" | translate : wine }} 0.75 l</h2>
+              <h1>{{ "Wine.Name" | translate : wine }} 0.75 l</h1>
             </div>
             <div
               *ngIf="show075Formats && !showFormats"
               class="col col-sm-12 text-center mt-2"
             >
-              <h2>{{ "Wine.Name" | translate : wine }}</h2>
+              <h1>{{ "Wine.Name" | translate : wine }}</h1>
             </div>
             <div *ngIf="show15Formats" class="col col-sm-12 text-center mt-2">
-              <h2>{{ "Wine.Name" | translate : wine }} 1.5 l</h2>
+              <h1>{{ "Wine.Name" | translate : wine }} 1.5 l</h1>
             </div>
             <div *ngIf="show3Formats" class="col col-sm-12 text-center mt-2">
-              <h2>{{ "Wine.Name" | translate : wine }} 3 l</h2>
+              <h1>{{ "Wine.Name" | translate : wine }} 3 l</h1>
             </div>
             <div *ngIf="show5Formats" class="col col-sm-12 text-center mt-2">
-              <h2>{{ "Wine.Name" | translate : wine }} 5 l</h2>
+              <h1>{{ "Wine.Name" | translate : wine }} 5 l</h1>
             </div>
           </div>
           <div class="row margin-from-title">
@@ -216,7 +216,7 @@
                 download
                 >{{ "Download.Profile" | translate }}</a
               >
-              <a
+              <a *ngIf="wine.downloadZIP"
                 href="{{ wine.downloadZIP }}"
                 class="btn my-btn-primary me-2 ms-2"
                 role="button"

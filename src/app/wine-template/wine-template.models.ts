@@ -43,7 +43,7 @@ export interface IWine {
   photo3?: string;
   photo5?: string;
   downloadPDF: string;
-  downloadZIP: string;
+  downloadZIP?: string;
   format?: IWineFormat[];
 }
 
